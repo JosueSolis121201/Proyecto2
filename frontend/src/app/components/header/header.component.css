@@ -2,7 +2,7 @@
 
 
 .header{
-    position: fixed;
+    position: absolute;
     background-color: #250001;
     margin: 0;
     padding: 0;

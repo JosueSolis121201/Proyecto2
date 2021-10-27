@@ -1,0 +1,17 @@
+.pie__contenedor{
+  flex-direction: row;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  height: 100%;
+  background-color: #FCBA04;
+  box-shadow: 5px 10px #250001;
+  border-radius: 20px;
+
+}
+.pie__elementos{
+
+  margin-left: 7vh;
+  
+
+}

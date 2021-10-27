@@ -1,4 +1,4 @@
-.login{
+.register{
     display: flex;
     align-items: center;
     align-content: center;
@@ -10,13 +10,13 @@
     min-height: 90vh;
     background-color: #F3F3F3;
 }
-.login__contenedor{
+.register__contenedor{
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     min-width: 40%;
-    min-height: 5vh;
+    min-height: 50vh;
     background-color: #A50104;
 
     border: 1px solid;
@@ -25,30 +25,30 @@
 
 }
 
-.login__elemento{
+.register__elemento{
     display: flex;
     justify-content: center;
     background-color: #FCBA04;
     border-radius: 20px;
-    min-height: 10vh;
-    min-width: 10vh;
-    
-
+    min-height: 50vh;
+    min-width: 50vh;
 
 }
+
+
 input[type=text], select {
     padding: 1vh 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #F3F3F3;
+    border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
   }
   
 input[type=submit] {
     width: 100%;
-    background-color: #F3F3F3;
-    color: F3F3F3;
+    background-color: #4CAF50;
+    color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;

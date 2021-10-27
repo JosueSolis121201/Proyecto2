@@ -1,0 +1,31 @@
+.home__Contenedero{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+
+    position:relative;
+    margin-top: 10vh;
+    min-height: 80vh;
+
+
+    flex-direction: column;
+
+}
+
+.home__Elementos{
+    margin-top: 5vh;
+
+  flex-direction: row;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  height: 100%;
+  background-color: #FCBA04;
+  box-shadow: 5px 10px #250001;
+  border-radius: 20px;
+
+
+}
+
+

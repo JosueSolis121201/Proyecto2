@@ -8,6 +8,9 @@ import { ItemsComponent } from './components/items/items.component';
 import { ItemComponent } from './components/item/item.component';
 import { TotalComponent } from './components/total/total.component';
 import { LogginComponent } from './components/loggin/loggin.component';
+import { HomeComponent } from './components/home/home.component';
+import { PieComponent } from './components/pie/pie.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { LogginComponent } from './components/loggin/loggin.component';
     ItemsComponent,
     ItemComponent,
     TotalComponent,
-    LogginComponent
+    LogginComponent,
+    HomeComponent,
+    PieComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
