@@ -1,0 +1,31 @@
+.login{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
+    position:relative;
+    margin-top: 12vh;
+    background-color: teal;
+    min-height: 80vh;
+}
+.login__contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    min-width: 40%;
+    background-color: tomato;
+
+    border: 1px solid;
+    padding: 0.2rem;
+    box-shadow: 5px 10px #250001;
+
+}
+
+.login__elemento{
+    display: flex;
+    justify-content: flex-start;
+    background-color: purple;
+}
