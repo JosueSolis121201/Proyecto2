@@ -3,11 +3,13 @@ from flask.wrappers import Request
 from functions.auth import login,register
 from functions.usuario import modificar_usuario
 
+from flask_cors import CORS
 
 
 
 
 app = Flask (__name__)
+CORS(app)
 
 @app.route('/login', methods=['POST'])
 def loginRoute():

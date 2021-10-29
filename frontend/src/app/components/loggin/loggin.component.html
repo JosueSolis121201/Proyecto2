@@ -2,25 +2,27 @@
     
     <div class="login__contenedor">
         <div class="login__elemento">
-            <div class="login___Datos">
+            <div [formGroup]="this.loginForm"  class="login___Datos">
                 
                 <p>
                     Nombre de Usuario
                 </p>
     
-                <p>
                     <label for="Name"></label>
-                    <input type="text" id="Name" name="Name" />
-                </p>
+                    <input type="text" id="nombre_de_usuario" name="nombre_de_usuario" formControlName="nombre_de_usuario"/>
 
                 <p>
                     Password
                 </p>
     
-                <p>
+                
                     <label for="Name"></label>
-                    <input type="text" id="Name" name="Name" />
+                    <input type="text" id="password" name="password" formControlName="password"/>
+                <p>
+                    <button (click)="this.crearUsuario()" class="button">register</button>
                 </p>
+
+                
              
                 
             </div>

@@ -55,3 +55,30 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
   }
+
+
+
+.button {
+    background-color: #FCBA04; 
+    border: none;
+    color: black;
+    padding: 1vh 11vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    border: 2px solid #250001;     
+    box-shadow: 5px 5px #250001;
+
+
+
+
+  }
+
+  .button:hover {
+    background-color: #250001; 
+
+    color: white;
+  }

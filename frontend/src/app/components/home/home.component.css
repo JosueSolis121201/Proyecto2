@@ -6,7 +6,8 @@
 
     position:relative;
     margin-top: 10vh;
-    min-height: 80vh;
+    min-height: 110vh;
+    background-color: #F3F3F3;
 
 
     flex-direction: column;
@@ -16,7 +17,6 @@
 .home__Elementos{
     margin-top: 5vh;
 
-  flex-direction: row;
   display: flex;
   align-items: flex-end;
   align-content: flex-end;
@@ -24,6 +24,48 @@
   background-color: #FCBA04;
   box-shadow: 5px 10px #250001;
   border-radius: 20px;
+
+
+}
+
+.fondo{
+background-image: url(https://blog.ulifestyle.com.hk/assets/image/ublog-logo-320x320.jpg);
+width: 320px;
+height: 320px;
+border-radius: 20px;
+
+}
+
+.texto__Contenedor{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 150vh;
+  height: 50vh;
+  margin-top: 3vh;
+
+}
+
+.texto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  width: 45vh;
+  height: 50vh;
+  border-radius: 20px;
+  margin-top: 6vh;
+  font-size: 1.5rem;
+  background-color: #A50104;
+  box-shadow: 5px 10px #250001;
+  border-radius: 20px;
+  color: #F3F3F3;
+
+
+
+
+
 
 
 }
