@@ -1,0 +1,128 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    width: 100vw;
+    height: 150vh;
+    margin-top: 10vh;
+
+    background-color: blue;
+}
+
+.logo{
+
+
+    background-image: url(https://blog.ulifestyle.com.hk/assets/image/ublog-logo-320x320.jpg);
+    width: 320px;
+    height: 320px;
+    border-radius: 20px;
+    margin-top: 5vh;
+
+    box-shadow: 5px 10px #250001;
+    border-radius: 20px;
+
+}
+
+.contenedor_post{
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: 80vh;
+    margin-top: 10vh;
+
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    position: absolute;
+    background-color: #250001;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+
+    
+}
+.header__contenedor{
+    flex-direction: row;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    height: 100%;
+}
+
+
+.header_contenedor-letras{
+    flex-grow: 1;
+    align-self: center;
+}
+
+.header__contenedor-menu{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__titulo{
+    color: #F3F3F3;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+.header__contenedor-letra{
+    color: #F3F3F3;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    width: 5rem;
+    border-width:2px;
+    border-style:solid;
+    border-color:#F3F3F3;
+    border-radius: 8px;
+}
+
+
+.header__contenedor-letra:hover{
+    color: #FCBA04;
+    border-color:#FCBA04;
+}

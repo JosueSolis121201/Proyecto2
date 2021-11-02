@@ -1,9 +1,37 @@
-<app-header></app-header>
+<menu class="header">
+    <div class="header__contenedor">
+        <div class="header_contenedor-letras">
+            <div class="header__titulo">
+                <p>
+                    Proyecto 2
+
+                </p>
+            </div>
+        </div>
+        <div class="header_contenedor-letras">
+            <div class="header__contenedor-menu">
+                    <div (click)="this.navegar('/usuario')" class="header__contenedor-letra">
+                        <p>Home</p>
+                    </div >
+                    <div (click)="this.navegar('/perfil')" class="header__contenedor-letra">
+                        <p>Editar perfil</p>
+                    </div>
+                    <div (click)="this.navegar('/crear_post')" class="header__contenedor-letra">
+                        <p>Crear post</p>
+                    </div>  
+            </div>
+        </div>
+    </div>
+</menu>
+
+
 
 <div class="register">
+   
     <div class="register__contenedor">
+        
         <div class="register__elemento">
-            <div [formGroup]="this.registerForm" class="register___Datos">
+            <div  class="register___Datos">
                 <p>
                     Nombre
                 </p>
@@ -48,7 +76,7 @@
 
 
                 <p>
-                    <button (click)="this.crearUsuario()" class="button">register</button>
+                    <button  class="button">Editar Perfil</button>
                 </p>
              
                 

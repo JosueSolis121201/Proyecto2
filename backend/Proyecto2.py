@@ -2,6 +2,8 @@ from flask import Flask, jsonify,request
 from flask.wrappers import Request
 from functions.auth import login,register
 from functions.usuario import modificar_usuario
+from functions.post import publicar_post,ver_post,ver_usuario
+
 
 from flask_cors import CORS
 
@@ -24,6 +26,21 @@ def registerRoute():
 @app.route('/usuario', methods=['PUT'])
 def modifyUser():
     response = modificar_usuario(request)
+    return(jsonify(response))
+
+@app.route('/crear_post', methods=['POST'])
+def crear_postRoute():
+    response = publicar_post(request)
+    return(jsonify(response))
+
+@app.route('/ver_post', methods=['POST'])
+def ver_postRoute():
+    response = ver_post(request)
+    return(jsonify(response))
+
+@app.route('/ver_usuario', methods=['POST'])
+def ver_usuarioRoute():
+    response = ver_usuario(request)
     return(jsonify(response))
 
 
