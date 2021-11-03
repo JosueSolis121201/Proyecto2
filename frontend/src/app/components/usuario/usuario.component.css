@@ -5,7 +5,7 @@
 
 
     width: 100vw;
-    height: 150vh;
+    min-height: 150vh;
     margin-top: 10vh;
 
     background-color: blue;
@@ -32,6 +32,8 @@
     width: 100vw;
     height: 80vh;
     margin-top: 10vh;
+    min-height: 150vh;
+
 
     background-color: blueviolet;
 }

@@ -10,7 +10,7 @@
         <div class="header_contenedor-letras">
             <div class="header__contenedor-menu">
                     <div (click)="this.navegar('/home')" class="header__contenedor-letra">
-                        <p>Home</p>
+                        <p>Salir</p>
                     </div >
                     <div (click)="this.navegar('/perfil')" class="header__contenedor-letra">
                         <p>Editar perfil</p>
@@ -34,8 +34,20 @@
 
         
     </div>
+        <div class="contenedor_post">
+            <table>
+                <tr  *ngFor="let post of this.listadoPost">
+                    <th scope="row"></th>
+                    <td>{{post.cantidad_megusta}}</td>
+                    <td>{{post.category}}</td>
+                    <td>{{post.date}}</td>
+                    <td>{{post.type}}</td>
+                    <td>{{post.url}}</td>
 
-    <div class="contenedor_post">
+
+                </tr>
+            </table>
+
 
         <h1>   POST </h1>
     </div>

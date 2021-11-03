@@ -49,7 +49,13 @@ def ver_post(request):
                 "estado":0,
                 "descripcion":"",
                 "post_lst":lista_serial
-            } 
+            }
+    return {
+                "estado":0,
+                "descripcion":"",
+                "post_lst":[]
+            }
+     
             
 def ver_usuario(request):
     global tabla_usuario

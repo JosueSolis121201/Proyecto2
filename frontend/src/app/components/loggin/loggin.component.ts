@@ -16,7 +16,7 @@ export class LogginComponent implements OnInit {
   loginForm:any ;
 
   constructor(private registerService:RegisterService,private formBuilder: FormBuilder,
-    private router: Router,private toastr: ToastrService,) { 
+    private router: Router,private toastr: ToastrService) { 
     this.createForm();
   }
 
