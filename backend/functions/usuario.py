@@ -21,19 +21,18 @@ def modificar_usuario (request):
 
 
     for objeto in tabla_usuario:
-        if objeto.nombre_de_usuario==nombre_de_usuario_viejo:
-            objeto.nombre = nombre
-            objeto.genero = genero
-            objeto.correo_electronico = correo_electronico
-            objeto.password = password
-            objeto.nombre_de_usuario = nombre_de_usuario  
-
-            return 
-            { 
-                "usuario":objeto,
-                "estado":0,
-                "descripcion":""
-            }
+            if objeto.nombre_de_usuario==nombre_de_usuario_viejo:
+                objeto.nombre = nombre
+                objeto.genero = genero
+                objeto.correo_electronico = correo_electronico
+                objeto.password = password
+                objeto.nombre_de_usuario = nombre_de_usuario  
+                return {
+                        
+                            "usuario":objeto.serializar(),
+                            "estado":0,
+                            "descripcion":""
+                            }
          
     return { 
             "estado":1,

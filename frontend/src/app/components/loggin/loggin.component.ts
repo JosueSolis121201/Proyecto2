@@ -40,7 +40,7 @@ export class LogginComponent implements OnInit {
         if(estado==0){
           localStorage.setItem('usuario',JSON.stringify(response.usuario))
 
-          //VARAIBLEAGUARDAR = JSON.parse(localStorage.getItem('usuario'));
+          //VARAIBLEAGUARDAR = JSON.parse(localStorage.getItem('usuario's));
           this.router.navigateByUrl("usuario");
           this.toastr.success("Usuario loggeado","Realizado")
 

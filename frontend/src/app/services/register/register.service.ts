@@ -27,6 +27,6 @@ export class RegisterService {
   }
 
   public editar_usuario(usuario:editar_perfil){
-    return this.http.post(ip+"/modifyUser",usuario);
+    return this.http.post(ip+"/usuario",usuario);
   }
 }

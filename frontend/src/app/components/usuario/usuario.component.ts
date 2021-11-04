@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { RegisterService } from 'src/app/services/register/register.service';
 
 import { ToastrService } from 'ngx-toastr';
+import { responsePost } from 'src/app/models/user';
 
 
 @Component({
@@ -35,6 +36,11 @@ export class UsuarioComponent implements OnInit {
 
     this.registerService.post_usuario(jsonPost).subscribe(
       (response:any)=>{ 
+
+
+        let listadoPost:responsePost = response;
+        
+
         this.listadoPost = response.post_lst;
         console.log(this.listadoPost)
       },(error)=>{

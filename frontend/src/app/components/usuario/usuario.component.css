@@ -8,7 +8,7 @@
     min-height: 150vh;
     margin-top: 10vh;
 
-    background-color: blue;
+    background-color: #ccc;
 }
 
 .logo{
@@ -34,8 +34,12 @@
     margin-top: 10vh;
     min-height: 150vh;
 
+    background-color: #FCBA04; 
+    border-radius: 8px;
+    border: 5px solid #250001;     
+    box-shadow: 5px 5px #250001;
 
-    background-color: blueviolet;
+
 }
 
 

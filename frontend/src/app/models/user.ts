@@ -24,7 +24,7 @@ export class responsePost{
     correo_electronico:string = '';
     password:string = '';
     nombre_de_usuario:string = '';
-    post_lst:post_usuario[]=[];
+    post_lst:posts[]=[];
 }
 
 
@@ -42,6 +42,8 @@ export class post_usuario{
     
 }
 
+
+
 export class editar_perfil{
 
     nombre: string = '';
@@ -50,5 +52,7 @@ export class editar_perfil{
     password:string = '';
     nombre_de_usuario:string = '';
     nombre_de_usuario_viejo:string = '';
+    estado: number = 0;
+
 
 }

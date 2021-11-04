@@ -23,7 +23,7 @@ def registerRoute():
     response = register(request)
     return(jsonify(response))
 
-@app.route('/usuario', methods=['PUT'])
+@app.route('/usuario', methods=['POST'])
 def modifyUser():
     response = modificar_usuario(request)
     return(jsonify(response))

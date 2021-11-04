@@ -31,14 +31,14 @@
     <div class="register__contenedor">
         
         <div class="register__elemento">
-            <div  class="register___Datos">
+            <div [formGroup]="this.perfilForm"  class="register___Datos">
                 <p>
                     Nombre
                 </p>
 
                 <p>
                     <label for="Name"></label>
-                    <input type="text" id="Name" name="registerNombre" formControlName="nombre" />
+                    <input type="text" id="1Name" name="registerNombre" formControlName="nombre" />
                 </p>
                 <p>
                     Genero
@@ -46,7 +46,7 @@
     
                 <p>
                     <label for="Name"></label>
-                    <input type="text" id="Name" name="registeGenero" formControlName="genero"/>
+                    <input type="text" id="1Genero" name="registeGenero" formControlName="genero"/>
                 </p>
                 <p>
                     Nombre de Usuario
@@ -54,7 +54,7 @@
     
                 <p>
                     <label for="Name"></label>
-                    <input type="text" id="Name" name="registerCorreo" formControlName="nombre_de_usuario"/>
+                    <input type="text" id="1Nombre de Usuario" name="registerCorreo" formControlName="nombre_de_usuario"/>
                 </p>
                 <p>
                     Correo electronico
@@ -62,7 +62,7 @@
     
                 <p>
                     <label for="Name"></label>
-                    <input type="text" id="Name" name="registerPassword" formControlName="correo_electronico"/>
+                    <input type="text" id="1Correo electronico" name="registerPassword" formControlName="correo_electronico"/>
                 </p>
 
                 <p>
@@ -71,12 +71,12 @@
     
                 <p>
                     <label for="Name"></label>
-                    <input type="text" id="Name" name="registeNombreDeUsuario" formControlName="password"/>
+                    <input type="text" id="1Password" name="registeNombreDeUsuario" formControlName="password"/>
                 </p>
 
 
                 <p>
-                    <button  class="button">Editar Perfil</button>
+                    <button (click)="this.editar_perfil()" class="button">Editar Perfil</button>
                 </p>
              
                 
