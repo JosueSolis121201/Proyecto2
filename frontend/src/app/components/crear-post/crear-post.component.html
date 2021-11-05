@@ -30,16 +30,19 @@
     <div class="register__contenedor">
         
         <div class="register__elemento">
-            <div  class="register___Datos">
+            <div [formGroup]="this.crear_postForm" class="register___Datos">
                 <p>
                     Tipo
                 </p>
 
                 <p>
                     <select name="Tipo" class="button">
+   
                         <option value="Video">video</option>
                         <option value="Imagen">imagen</option>
-                        
+                        <input type="text" id="Tipo" name="Tipo" formControlName="type"
+                        type="submit" value="Enviar"/>
+
                       </select>
                 </p>
                 <p>
@@ -48,7 +51,7 @@
     
                 <p>
                     <label for="Name"></label>
-                    <input type="text" id="Name" name="registeGenero" formControlName="genero"/>
+                    <input type="text" id="Url" name="Url" formControlName="url"/>
                 </p>
                 <p>
                     Categoria
@@ -57,12 +60,12 @@
                 <p>
                     <label for="Name"></label>
                     
-                    <input type="text" id="Name" name="registerCorreo" formControlName="nombre_de_usuario"/>
+                    <input type="text" id="Categoria" name="Categoria" formControlName="category"/>
                 </p>
 
 
                 <p>
-                    <button  class="button">Crear post</button>
+                    <button (click)="this.crearPost()" class="button">Crear post</button>
                 </p>
              
                 

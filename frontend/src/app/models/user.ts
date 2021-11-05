@@ -53,6 +53,18 @@ export class editar_perfil{
     nombre_de_usuario:string = '';
     nombre_de_usuario_viejo:string = '';
     estado: number = 0;
+}
 
+
+
+export class crear_post{
+    nombre_de_usuario:string = '';
+    type:string= "";
+    url:string= "";
+    date:string= "";
+    category:string = "";
+    cantidad_megusta:number =0;
+    estado: number = 0;
 
 }
+
