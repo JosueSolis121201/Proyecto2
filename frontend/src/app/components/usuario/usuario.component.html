@@ -32,23 +32,45 @@
 <div class="contenedor">
     <div class="logo">
 
-        
     </div>
         <div class="contenedor_post">
-            <table>
-                <tr  *ngFor="let post of this.listadoPost">
-                    <th scope="row"></th>
-                    <td>{{post.cantidad_megusta}}</td>
-                    <td>{{post.category}}</td>
-                    <td>{{post.date}}</td>
-                    <td>{{post.type}}</td>
-                    <td>{{post.url}}</td>
+            <h1>   POST </h1>
+
+            <div class="user-layout">
+                <div  *ngFor="let post of this.listadoPost" class="separador">
+
+                    <div class="user-card">
+                        <div class="user-center">
+                            <h1> {{post.type}}</h1>
+                        </div>
+                        <div class="user-linea">
+                        </div>
+                        <div class="user-box">
+                            <div class="user-box-text">
+                                <td>Cantidad de megustas: {{post.cantidad_megusta}}</td>
+                                <div class="user-linea"></div>
+                                <td>Categorias: {{post.category}}</td>
+                                <div class="user-linea"></div>
+                                <td>{{post.date}}</td>
+                                <div class="user-linea"></div>
+                            </div>
+
+                            <div >
+                                <div *ngIf="post.type!='imagen'">
+                                    <iframe class="user-media" [src]="post.url" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                                </div>
+
+                                <div *ngIf="post.type=='imagen'">
+                                    <img class="user-media" [src]="post.url">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-                </tr>
-            </table>
+                </div>
 
 
-        <h1>   POST </h1>
+            </div>
     </div>
 </div>

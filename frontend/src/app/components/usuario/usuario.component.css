@@ -27,7 +27,8 @@
 
 .contenedor_post{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     width: 100vw;
     height: 80vh;
@@ -42,21 +43,93 @@
 
 }
 
+table{
+    background-color: #250001; 
+    border-radius: 8px;
+    border: 5px solid #250001;     
+    box-shadow: 5px 5px #250001;
+    color: #F3F3F3;
 
 
 
+}
 
 
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.user-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.user-layout{
+    padding: 2rem;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-width:6px;
+    border-style:solid;
+    border-color:#250001;
+    border-radius: 8px;
+}
+
+.user-box-text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+
+    justify-content: space-evenly;
+}
+
+.user-linea{
+    background-color: #250001;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
 
 
+.user-media{
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
+}
 
 
+.user-center{
+    display: flex;
+    justify-content: center;
+}
 
+.user-card{
+    box-shadow: 5px 5px #250001;
+    background-color: #A50104;
+    padding:1rem;
+    border-radius: 8px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 
+    color: #f3f3f3;
 
-
-
+}
 
 
 

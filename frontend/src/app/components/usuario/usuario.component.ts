@@ -4,7 +4,10 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { RegisterService } from 'src/app/services/register/register.service';
 
 import { ToastrService } from 'ngx-toastr';
+import { DomSanitizer } from '@angular/platform-browser';
 import { responsePost } from 'src/app/models/user';
+
+
 
 
 @Component({
@@ -18,9 +21,11 @@ export class UsuarioComponent implements OnInit {
   listadoPost:any[] =[];
 
   usuarioActual:any = {}
+  
 
   constructor(private router: Router,private registerService:RegisterService,
-    private formBuilder: FormBuilder,private toastr: ToastrService) {
+    private formBuilder: FormBuilder,private toastr: ToastrService,
+    private _sanitizer: DomSanitizer) {
     }
 
   
@@ -31,17 +36,25 @@ export class UsuarioComponent implements OnInit {
   }
 
   verposts(){
+
     let jsonPost = this.usuarioActual;
+
+
 
 
     this.registerService.post_usuario(jsonPost).subscribe(
       (response:any)=>{ 
 
 
-        let listadoPost:responsePost = response;
         
 
         this.listadoPost = response.post_lst;
+        
+        this.listadoPost.map((item:any)=>{
+          if(item.type!="imagen"){
+           item.url = this._sanitizer.bypassSecurityTrustResourceUrl(item.url);
+          }
+        })
         console.log(this.listadoPost)
       },(error)=>{
         console.log({err:error})

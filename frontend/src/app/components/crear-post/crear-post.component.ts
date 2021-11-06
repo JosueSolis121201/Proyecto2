@@ -8,12 +8,15 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 
 
 
+
 @Component({
   selector: 'app-crear-post',
   templateUrl: './crear-post.component.html',
   styleUrls: ['./crear-post.component.css']
 })
-export class CrearPostComponent implements OnInit {
+export class CrearPostComponent implements OnInit { 
+
+  selected:string ='';
 
   crear_postForm:any ;
 
@@ -48,6 +51,7 @@ export class CrearPostComponent implements OnInit {
     
     
     jsonUsuario.nombre_de_usuario =hola.nombre_de_usuario
+    jsonUsuario.type=this.selected
 
     
     jsonUsuario.date = "Fecha :"+myDate.getDay()+" / "+myDate.getMonth()+" / "+myDate.getFullYear()+" Hora "+
@@ -62,7 +66,11 @@ export class CrearPostComponent implements OnInit {
         if(estado==0){
           
           this.toastr.success("post publicado","Realizado")
+          console.log({hola:this.selected})
           this.router.navigateByUrl("usuario");
+
+          
+
 
         }else{
           

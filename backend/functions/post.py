@@ -8,7 +8,7 @@ def publicar_post(request):
 
     global tabla_usuario
 
-    nombre_de_usuario = request.json["nombre_de_usuario"]
+    nombre_de_usuario=request.json["nombre_de_usuario"]
     type=request.json["type"]
     url=request.json["url"]
     date=request.json["date"]
