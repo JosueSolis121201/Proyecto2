@@ -1,4 +1,5 @@
 FROM python:3
 ADD . . 
-RUN pip instaclearrs
+RUN pip install -U Flask
+RUN pip install -U flask-cors
 CMD [ "python", "./Proyecto2.py" ]
